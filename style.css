@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background: #BBBBBB;
     padding: 20px 0;
@@ -64,7 +68,7 @@ nav a:hover {
     font-size: 34px;
 }
 
-h2 {
+.produtos h2 {
     font-weight: bold;
     font-size: 30px;
 }
@@ -92,8 +96,6 @@ footer {
 }
 
 main {
-    width: 940px;
-    margin: 0 auto;
 }
 
 .input-text {
@@ -150,4 +152,128 @@ th, td {
     padding: 8px 15px;
 }
 
+/* pagina principal */
+
+.principal {
+    width: 940px;
+    margin: 3em auto;
+    background: #FEFEFE;
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;    
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens::before {
+    content: '★';
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    width: 60%;
+    opacity: 0.3;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo {
+        width: auto;     
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagem-beneficios {
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
 
